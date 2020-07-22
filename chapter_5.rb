@@ -36,3 +36,6 @@ end
 hoge = Hoge.new
 p hoge.to_s
 p hoge.inspect
+
+p a = {"apple" => "fruit", "coffee" => "drink"}
+p a.class
