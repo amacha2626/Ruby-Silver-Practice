@@ -39,3 +39,6 @@ p hoge.inspect
 
 p a = {"apple" => "fruit", "coffee" => "drink"}
 p a.class
+
+a = {a: "a", b: "b", c: "c"}
+p a.fetch(5){|key| key % 2 == 0}
