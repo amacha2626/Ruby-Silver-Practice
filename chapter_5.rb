@@ -42,3 +42,8 @@ p a.class
 
 a = {a: "a", b: "b", c: "c"}
 p a.fetch(5){|key| key % 2 == 0}
+
+p a = {apple: "foods", coffee: "drink"}
+p a.merge({coffee: "foods", orange: "fruit", tea: "drink"}){|key, self_val, other_val| self_val}
+p a.merge({coffee: "foods", orange: "fruit", tea: "drink"}){|key, self_val, other_val| other_val}
+
