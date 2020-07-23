@@ -47,3 +47,5 @@ p a = {apple: "foods", coffee: "drink"}
 p a.merge({coffee: "foods", orange: "fruit", tea: "drink"}){|key, self_val, other_val| self_val}
 p a.merge({coffee: "foods", orange: "fruit", tea: "drink"}){|key, self_val, other_val| other_val}
 
+a.each{|key, value| puts "#{key} => #{value}\n"}
+a.each_pair{|key, value| puts "#{key} => #{value}\n"}
