@@ -49,3 +49,12 @@ p a.merge({coffee: "foods", orange: "fruit", tea: "drink"}){|key, self_val, othe
 
 a.each{|key, value| puts "#{key} => #{value}\n"}
 a.each_pair{|key, value| puts "#{key} => #{value}\n"}
+
+# p Symbol.all_symbols
+
+IO.popen('grep -i ruby', 'r+') do |io|
+  io.write('This is Ruby program')
+  io.close_write
+  puts io.read
+end
+
