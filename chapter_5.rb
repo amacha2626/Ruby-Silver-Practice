@@ -58,3 +58,10 @@ IO.popen('grep -i ruby', 'r+') do |io|
   puts io.read
 end
 
+p "-------------------"
+
+p /(abc)d(efg)/ =~ "abcdefghijklmnopqrstuvwxyz"
+p Regexp.last_match
+p Regexp.last_match(0)
+p $&
+p $1
