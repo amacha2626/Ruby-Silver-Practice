@@ -65,3 +65,13 @@ p Regexp.last_match
 p Regexp.last_match(0)
 p $&
 p $1
+
+[1, 2, 3, 4, 5].inject(0) {|result, v| p result + v ** 2}
+[1, 2, 3, 4, 5].inject(0) {|result, v| p v ** 2}
+
+p "-------------------"
+
+p a = [1 ,2, 3, 4, 5].lazy.select{|e| e % 2 == 0}
+p b = a.map{|e| e * 2}
+p c = a.take(3)
+p c.to_a
