@@ -75,3 +75,30 @@ p a = [1 ,2, 3, 4, 5].lazy.select{|e| e % 2 == 0}
 p b = a.map{|e| e * 2}
 p c = a.take(3)
 p c.to_a
+
+p "-------------------"
+
+class Sample
+  include Comparable
+
+  def initialize(value)
+    @value = value
+  end
+
+  def value
+    @value
+  end
+
+  def <=>(other)
+    other.value <=> self.value
+  end
+end
+
+a = Sample.new(10)
+b = Sample.new(5)
+p a.class
+p a < b
+p a <= b
+p a == b
+p a > b
+p a >= b
