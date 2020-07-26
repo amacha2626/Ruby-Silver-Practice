@@ -102,3 +102,9 @@ p a <= b
 p a == b
 p a > b
 p a >= b
+
+p "------------------"
+
+p /Ruby/
+p %r(Ruby)
+p Regexp.new "Ruby"
