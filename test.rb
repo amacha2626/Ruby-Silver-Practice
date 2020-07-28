@@ -59,3 +59,14 @@ end
 fooExt = FooExt.new(3,4)
 p fooExt.method1
 p fooExt.method2(5)
+
+
+p doc = <<-EOF
+  The quick brown fox
+  dog
+    EOF
+
+p doc = <<-EOF
+  The quick brown fox
+  dog
+EOF
