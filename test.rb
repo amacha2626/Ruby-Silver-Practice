@@ -75,3 +75,9 @@ p str = "RubyAssociation\r"
 p str = "RubyAssociation\r".chomp
 p str = "RubyAssociation\r".chop
 p str = "RubyAssociation\r\n".chop
+
+a = /^[hc].*o$/i
+p "Hello".match(a)
+p "Cello".match(a)
+p "Bello".match(a)
+p "Hello".match(/^[hc].*o$/)
