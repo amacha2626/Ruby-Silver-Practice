@@ -148,3 +148,10 @@ p b = 1 || b
 
 c = 0
 p c ||= 1
+
+ary = []
+ary << 1 && false
+true || ary << 2
+false && ary << 3
+false || ary << 4
+p ary
