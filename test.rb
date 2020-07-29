@@ -157,3 +157,15 @@ false || ary << 4
 p ary
 
 p "foo" * 2 **3
+
+foo = [1,2,3]
+bar = foo
+baz = foo.dup
+
+bar[3] = 4
+p foo
+p foo.object_id
+p bar
+p bar.object_id
+p baz
+p baz.object_id
