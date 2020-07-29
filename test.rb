@@ -86,3 +86,10 @@ p File.join("ruby", "exam", "silver")
 
 puts "ruby".encoding
 puts "ruby".encoding.name
+
+cc = {"nz"=>"New Zealand", "ru"=>"Russia", "ar"=>"Argentina"}
+p cc.has_key?('nz')
+# p cc.contain?('nz')
+p cc.key?('nz')
+p cc.include?('nz')
+p cc.member?('nz')
