@@ -70,3 +70,6 @@ p doc = <<-EOF
   The quick brown fox
   dog
 EOF
+
+p str = "RubyAssociation\r"
+p str = "RubyAssociation\r".chomp
