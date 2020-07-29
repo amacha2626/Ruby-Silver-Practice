@@ -93,3 +93,9 @@ p cc.has_key?('nz')
 p cc.key?('nz')
 p cc.include?('nz')
 p cc.member?('nz')
+
+s = "To be or not to be, that is the question."
+p hash = Hash.new(0)
+s.scan(/\w+/) {|i| hash[i] += 1}
+p hash
+p hash["be"]
