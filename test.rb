@@ -73,3 +73,5 @@ EOF
 
 p str = "RubyAssociation\r"
 p str = "RubyAssociation\r".chomp
+p str = "RubyAssociation\r".chop
+p str = "RubyAssociation\r\n".chop
