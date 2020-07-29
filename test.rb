@@ -124,3 +124,5 @@ else
 ensure
   p 3
 end
+
+1 / 0 rescue p 1
