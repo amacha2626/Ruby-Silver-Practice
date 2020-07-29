@@ -81,3 +81,5 @@ p "Hello".match(a)
 p "Cello".match(a)
 p "Bello".match(a)
 p "Hello".match(/^[hc].*o$/)
+
+p File.join("ruby", "exam", "silver")
