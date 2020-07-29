@@ -174,3 +174,5 @@ str = "a,b,c,d"
 p str.split(/,/, 2)
 p str.split(/,/, 3)
 p str.split(/,/, 4)
+
+puts "0123456789".delete("0-5 8-")
