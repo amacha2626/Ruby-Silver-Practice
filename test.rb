@@ -169,3 +169,8 @@ p bar
 p bar.object_id
 p baz
 p baz.object_id
+
+str = "a,b,c,d"
+p str.split(/,/, 2)
+p str.split(/,/, 3)
+p str.split(/,/, 4)
