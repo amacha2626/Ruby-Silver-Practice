@@ -141,3 +141,10 @@ rescue ZeroDivisionError => e
   p e.backtrace
   p e.message
 end
+
+b = 0
+p b = b || 1
+p b = 1 || b
+
+c = 0
+p c ||= 1
