@@ -99,3 +99,28 @@ p hash = Hash.new(0)
 s.scan(/\w+/) {|i| hash[i] += 1}
 p hash
 p hash["be"]
+
+# raise ArgumentError, "引数が不正です"
+err = ArgumentError.new("引数が不正です")
+# raise err
+# raise "実行中にエラーが発生しました"
+
+begin
+  1 / 0
+  p 1
+rescue
+  p 0
+end
+
+p "--------------"
+
+begin
+  # 1 / 0
+  p 1
+rescue
+  p 0
+else
+  p 2
+ensure
+  p 3
+end
