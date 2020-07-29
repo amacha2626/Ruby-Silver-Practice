@@ -155,3 +155,5 @@ true || ary << 2
 false && ary << 3
 false || ary << 4
 p ary
+
+p "foo" * 2 **3
