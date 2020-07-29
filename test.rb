@@ -195,3 +195,6 @@ p numbers.detect{|x| x % 5 == 0}
 
 p [1, 2, 3].map {|n| n * 3 }
 p [1, 2, 3].each {|n| n * 3 }
+
+member = [10, "Tanaka"]
+print "ID:%2d Name:%s" % member
