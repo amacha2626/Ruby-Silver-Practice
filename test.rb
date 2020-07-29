@@ -176,3 +176,16 @@ p str.split(/,/, 3)
 p str.split(/,/, 4)
 
 puts "0123456789".delete("0-5 8-")
+
+numbers = [3,89,40,39,29,10,50,59,69]
+num = numbers.inject do |i,j|
+  i > j ? i : j
+end
+p num
+
+numbers = [3,89,40,39,29,10,50,59,69]
+num = numbers.inject do |i,j|
+  p i
+  p j
+end
+p num
