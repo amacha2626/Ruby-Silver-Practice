@@ -373,3 +373,14 @@ p [1,2,3,4].map {|e| e * e}
 [1,2,3,4].map do |e|
   p e * e
 end
+
+p "-----------------"
+
+def hoge1
+  x = 0
+  1.step(5,1) do |i|
+    x += 1
+  end
+  puts x
+end
+hoge1
