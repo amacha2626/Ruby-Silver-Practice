@@ -455,3 +455,13 @@ puts foo(2) * 2
 (1..10).each_cons(3) {|arr| p arr }
 p "-----------------"
 (1..10).each_slice(3) {|arr| p arr }
+
+taro = 0
+def taro
+  x = 0
+  5.times do |i|
+    x += 1
+  end
+  x
+end
+puts taro
