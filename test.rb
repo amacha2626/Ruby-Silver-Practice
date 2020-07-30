@@ -246,3 +246,19 @@ open('textfile.txt', 'r+') do |f|
   f.rewind
   f.puts data
 end
+
+def bar(n)
+  puts n
+end
+bar 5
+
+def bar(n)
+  puts n
+end
+bar (10)
+
+def bar(*n1, n2)
+  puts n1
+  puts n2
+end
+bar 5, 6, 7, 8
