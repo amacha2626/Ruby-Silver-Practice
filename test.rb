@@ -467,3 +467,6 @@ end
 puts taro
 
 p "Hello" % 5
+
+h = {a: 100, b: 100}
+puts h.invert
