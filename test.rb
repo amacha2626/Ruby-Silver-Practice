@@ -419,3 +419,5 @@ x = 1
 y = 1
 p x.object_id
 p y.object_id
+
+puts '80'.oct
