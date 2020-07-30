@@ -476,3 +476,5 @@ p a
 
 dog, = 1, 2
 p dog
+
+p Hash[]
