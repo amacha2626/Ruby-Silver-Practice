@@ -236,3 +236,7 @@ h = { "b" => 20, "a" => 30, "c" => 10  }
 p h.sort
 p h.sort {|a,b| a[1]<=>b[1]}
 p h.sort {|a,b| a[0]<=>b[0]}
+
+puts File.join("/", "user", "bin")
+puts File.join("/dog", "user", "bin")
+puts File.join("dog", "user", "bin")
