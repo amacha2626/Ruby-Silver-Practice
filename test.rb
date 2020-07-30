@@ -391,3 +391,17 @@ h[:b] = 100
 
 p h
 p h[:a]
+
+p "---------------"
+
+(1..10).each
+.reverse_each
+.each do |i|
+  puts i
+end
+
+(1..10).each \
+.reverse_each \
+.each do |i|
+  puts i
+end
