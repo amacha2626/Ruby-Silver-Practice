@@ -423,3 +423,24 @@ p y.object_id
 puts '80'.oct
 
 p "foobarfoobar".index("bar", 6)
+
+p "---------------"
+
+def hoge3(step = 1)
+  current = 0
+  Proc.new {
+    current += step
+  }
+end
+
+p1 = hoge3
+p2 = hoge3(2)
+
+p1.call
+p1.call
+p1.call
+p2.call
+p2.call
+
+p p1.call
+p p2.call
