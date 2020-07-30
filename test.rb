@@ -414,3 +414,8 @@ a.concat b
 a.reverse
 p a
 p a.index("R", 1)
+
+x = 1
+y = 1
+p x.object_id
+p y.object_id
