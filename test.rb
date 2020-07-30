@@ -298,3 +298,7 @@ h = {a: 100, b: 100}
 puts h.invert
 h = {a: 200, b: 100}
 puts h.invert
+
+hoge = *"a"
+puts hoge
+puts hoge.class
