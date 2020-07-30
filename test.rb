@@ -316,3 +316,10 @@ s = <<EOF
     Ruby
 EOF
 p s
+
+io = File.open('textfile.txt')
+while not io.eof?
+  io.readlines
+  io.seek(0, IO::SEEK_CUR)
+  p io.readlines
+end
