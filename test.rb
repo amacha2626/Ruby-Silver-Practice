@@ -228,3 +228,6 @@ p [a, b].transpose
 
 puts "0123456789-".delete("^13-56-")
 puts "0123456789-".delete("13-56-")
+
+p /a*b/ === "ab"
+p /a*b/ === "b"
