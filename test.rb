@@ -304,3 +304,15 @@ puts hoge
 puts hoge.class
 
 p *h
+
+s = <<-EOF
+    Hello,
+    Ruby
+    EOF
+p s
+
+s = <<EOF
+    Hello,
+    Ruby
+EOF
+p s
