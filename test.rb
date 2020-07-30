@@ -198,3 +198,7 @@ p [1, 2, 3].each {|n| n * 3 }
 
 member = [10, "Tanaka"]
 print "ID:%2d Name:%s" % member
+
+p ?A
+# p ?AA
+p ?a
