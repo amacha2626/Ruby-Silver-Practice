@@ -480,3 +480,38 @@ p dog
 p Hash[]
 
 p 0xFF
+
+p Time.now.strftime("%Y-%m-%d")
+p Time.now.strftime("%F")
+p Time.now.strftime("%x")
+
+(1..10).each
+.reverse_each
+.each do |i|
+  puts i
+end
+
+(1..10).each.
+reverse_each.
+each do |i|
+  puts i
+end
+
+(1..10).to_a.each.
+reverse_each.
+each do |i|
+  puts i
+end
+
+(1..10).each \
+.reverse_each \
+.each do |i|
+  puts i
+end
+
+a1 = [1,2,3]
+a2 = [4,2,3]
+
+p a1 | a2
+
+puts("abcdefghijklmnopqrstuvwxyz".split(//))
