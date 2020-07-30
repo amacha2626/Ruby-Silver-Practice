@@ -323,3 +323,21 @@ while not io.eof?
   io.seek(0, IO::SEEK_CUR)
   p io.readlines
 end
+
+p "-------------------"
+
+$val = 0
+
+class Count
+  def self.up
+    $val = $val + 1
+    $val == 3 ? true : false
+  end
+end
+
+a = [*1..10].select do
+  Count.up
+end
+
+p a
+p $val
