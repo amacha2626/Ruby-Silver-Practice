@@ -361,3 +361,5 @@ end
 end
 
 p $val
+
+p "Hello%d" % 5
