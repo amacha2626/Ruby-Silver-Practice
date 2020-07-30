@@ -422,3 +422,4 @@ p y.object_id
 
 puts '80'.oct
 
+p "foobarfoobar".index("bar", 6)
