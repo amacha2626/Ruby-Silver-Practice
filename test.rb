@@ -270,3 +270,9 @@ p str
 (10..15).to_a.map.with_index(10) do |elem, i|
   puts i
 end
+
+h = {a: 100, b: 200}
+h.each {|p|
+  p p
+  p p.class
+}
