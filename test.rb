@@ -262,3 +262,7 @@ def bar(*n1, n2)
   puts n2
 end
 bar 5, 6, 7, 8
+
+str = "   Liberty Fish   \r\n"
+str.strip!
+p str
