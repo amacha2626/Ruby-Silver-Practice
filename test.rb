@@ -209,3 +209,19 @@ p array[1...5]
 a = 1,2,3
 p a.class
 p a.join(",")
+
+a = [1,2,3]
+b = [1,3,5]
+c = a
+p a.object_id
+p c.object_id
+p a = b & c
+p a.object_id
+p c.object_id
+p a + b + c
+
+a = ["a", "b", "c"]
+b = [1, 2, 3]
+p [a, b]
+p [a, b].transpose
+[a, b].transpose.each{|x, y| p [x, y]}
