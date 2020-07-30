@@ -240,3 +240,9 @@ p h.sort {|a,b| a[0]<=>b[0]}
 puts File.join("/", "user", "bin")
 puts File.join("/dog", "user", "bin")
 puts File.join("dog", "user", "bin")
+
+open('textfile.txt', 'r+') do |f|
+  data = f.read.upcase
+  f.rewind
+  f.puts data
+end
