@@ -367,3 +367,9 @@ p "Hello%d" % 5
 str = "1;2:3;4"
 p str.split(";|:")
 p str.split(/;|:/)
+
+p [1,2,3,4].map {|e| e * e}
+
+[1,2,3,4].map do |e|
+  p e * e
+end
