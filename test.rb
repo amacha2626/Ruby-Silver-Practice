@@ -384,3 +384,10 @@ def hoge1
   puts x
 end
 hoge1
+
+h = Hash.new("default value")
+[:a]
+h[:b] = 100
+
+p h
+p h[:a]
