@@ -465,3 +465,5 @@ def taro
   x
 end
 puts taro
+
+p "Hello" % 5
