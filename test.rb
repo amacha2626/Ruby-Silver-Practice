@@ -363,3 +363,7 @@ end
 p $val
 
 p "Hello%d" % 5
+
+str = "1;2:3;4"
+p str.split(";|:")
+p str.split(/;|:/)
