@@ -302,3 +302,5 @@ puts h.invert
 hoge = *"a"
 puts hoge
 puts hoge.class
+
+p *h
