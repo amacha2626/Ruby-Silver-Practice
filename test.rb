@@ -411,7 +411,7 @@ p "-----------------"
 a = "Ruby"
 b = " on Rails"
 a.concat b
-a.reverse
+a.reverse!
 p a
 p a.index("R", 1)
 
@@ -421,3 +421,4 @@ p x.object_id
 p y.object_id
 
 puts '80'.oct
+
