@@ -293,3 +293,8 @@ File.open('testfile.txt', 'a+') do |f|
   f.seek(0, IO::SEEK_SET)
   f.write("recode 2\n")
 end
+
+h = {a: 100, b: 100}
+puts h.invert
+h = {a: 200, b: 100}
+puts h.invert
