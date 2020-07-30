@@ -444,3 +444,10 @@ p2.call
 
 p p1.call
 p p2.call
+
+def foo(n)
+  n ** n
+end
+
+puts foo (2) * 2
+puts foo(2) * 2
