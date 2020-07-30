@@ -405,3 +405,12 @@ end
 .each do |i|
   puts i
 end
+
+p "-----------------"
+
+a = "Ruby"
+b = " on Rails"
+a.concat b
+a.reverse
+p a
+p a.index("R", 1)
