@@ -276,3 +276,10 @@ h.each {|p|
   p p
   p p.class
 }
+
+a = [1]
+a[5] = 10
+a.compact
+p a
+a.compact!
+p a
