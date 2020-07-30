@@ -225,3 +225,6 @@ b = [1, 2, 3]
 p [a, b]
 p [a, b].transpose
 [a, b].transpose.each{|x, y| p [x, y]}
+
+puts "0123456789-".delete("^13-56-")
+puts "0123456789-".delete("13-56-")
