@@ -470,3 +470,9 @@ p "Hello" % 5
 
 h = {a: 100, b: 100}
 puts h.invert
+
+a, = (1..5).partition(&:odd?)
+p a
+
+dog, = 1, 2
+p dog
