@@ -202,3 +202,6 @@ print "ID:%2d Name:%s" % member
 p ?A
 # p ?AA
 p ?a
+
+array = [5, 6, 7, 8, 9, 10]
+p array[1...5]
