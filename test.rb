@@ -478,3 +478,5 @@ dog, = 1, 2
 p dog
 
 p Hash[]
+
+p 0xFF
