@@ -266,3 +266,7 @@ bar 5, 6, 7, 8
 str = "   Liberty Fish   \r\n"
 str.strip!
 p str
+
+(10..15).to_a.map.with_index(10) do |elem, i|
+  puts i
+end
