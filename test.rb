@@ -341,3 +341,6 @@ end
 
 p a
 p $val
+
+d = Time.new(2015, 1, 5)
+puts d.strftime("%x")
