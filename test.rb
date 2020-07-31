@@ -551,5 +551,13 @@ class Qux4
   def method1; v3; end
 end
 qux4 = Qux4.new
-# p qux4.v3 = 3
+p qux4.v3 = 3
+p qux4.method1
+
+class Qux4Ext < Qux4
+end
+
+qux4Ext = Qux4Ext.new
+p qux4Ext.v3 = 4
+p qux4Ext.v3
 p qux4.method1
