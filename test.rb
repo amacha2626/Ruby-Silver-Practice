@@ -518,3 +518,5 @@ puts("abcdefghijklmnopqrstuvwxyz".split(//))
 
 p [{:foo => 1}, ["bar", 2]].map{|i| i.to_s }.sort
 
+hash = {:foo => 1, :bar => 2}
+p hash.delete(:foo)
