@@ -515,3 +515,6 @@ a2 = [4,2,3]
 p a1 | a2
 
 puts("abcdefghijklmnopqrstuvwxyz".split(//))
+
+p [{:foo => 1}, ["bar", 2]].map{|i| i.to_s }.sort
+
