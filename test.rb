@@ -628,3 +628,6 @@ File.open("planets.txt", "w") do |f|
 end
 f = File.open("planets.txt")
 p f.readline("Earth")
+
+p File.split("/home/john/bookmarks/")
+p File.split("/home/john/bookmarks/").join
