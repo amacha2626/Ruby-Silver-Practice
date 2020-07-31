@@ -589,3 +589,15 @@ end
 a = %w[Bowler Deerstalker Dunce\ cap Fedora Fez]
 p a
 p a.class
+
+file = File.open("hello.rb", "w")
+stat = file.stat
+mtime1 = stat.mtime
+file.puts("new data")
+file.flush
+mtime2 = stat.mtime
+
+p mtime1
+p mtime2
+p file.mtime
+p mtime1 == mtime2
