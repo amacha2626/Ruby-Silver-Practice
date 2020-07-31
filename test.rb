@@ -520,3 +520,14 @@ p [{:foo => 1}, ["bar", 2]].map{|i| i.to_s }.sort
 
 hash = {:foo => 1, :bar => 2}
 p hash.delete(:foo)
+
+module Dog
+  Bar = "bar"
+end
+ 
+class Baz
+  include Dog
+end
+ 
+puts Baz::Bar
+puts Dog::Bar
