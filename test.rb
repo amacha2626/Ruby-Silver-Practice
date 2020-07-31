@@ -622,3 +622,9 @@ end
 ["bin/hallo.py", "ola.lua", "/tmp/hej.cpp"].each do |filename|
   puts File.basename(filename, ".*")+"rb"
 end
+
+File.open("planets.txt", "w") do |f|
+  f.puts(%w[Mercury Venus Earth Mars Jupiter Uranus Neptune])
+end
+f = File.open("planets.txt")
+p f.readline("Earth")
