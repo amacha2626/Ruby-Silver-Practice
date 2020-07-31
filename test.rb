@@ -612,3 +612,13 @@ p mtime1 == mtime2
 #   File.open(filename, "w")
 # end
 # Dir.rmdir("python")
+
+["bin/hallo.py", "ola.lua", "/tmp/hej.cpp"].each do |filename|
+  puts File.basename(filename, ".*")+".rb"
+end
+["bin/hallo.py", "ola.lua", "/tmp/hej.cpp"].each do |filename|
+  puts File.basename(filename)+".rb"
+end
+["bin/hallo.py", "ola.lua", "/tmp/hej.cpp"].each do |filename|
+  puts File.basename(filename, ".*")+"rb"
+end
