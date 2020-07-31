@@ -601,3 +601,14 @@ p mtime1
 p mtime2
 p file.mtime
 p mtime1 == mtime2
+
+# ["tmp", "tmp/lang",  "tmp/lang/ruby", "tmp/lang/python"].each do |dir|
+#   Dir.mkdir(dir)
+# end
+# Dir.chdir("tmp/lang")
+# p Dir.new(".")
+# Dir.new(".").each do |entry|
+#   filename = File.join(entry, "rocking.rb")
+#   File.open(filename, "w")
+# end
+# Dir.rmdir("python")
