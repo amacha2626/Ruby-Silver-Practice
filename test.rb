@@ -561,3 +561,31 @@ qux4Ext = Qux4Ext.new
 p qux4Ext.v3 = 4
 p qux4Ext.v3
 p qux4.method1
+
+Foo = "main"
+ 
+class Bar
+  Foo = "foo"
+ 
+  def self.foo
+    ::Foo
+  end
+end
+ 
+p Bar.foo
+p Bar::Foo
+
+File.open("hats.txt", "w") do |f|
+  f.puts(%w[Bowler Deerstalker Dunce\ cap Fedora Fez])
+end
+ 
+File.open("hats.txt") do |f|
+  4.times { f.gets() }
+  puts f.gets
+  puts f.gets
+  # puts f.readline
+end
+
+a = %w[Bowler Deerstalker Dunce\ cap Fedora Fez]
+p a
+p a.class
