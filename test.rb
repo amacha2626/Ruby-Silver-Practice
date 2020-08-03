@@ -642,3 +642,6 @@ string.slice(0, 4)
 p string
 string.slice!(0,4)
 p string
+
+p 12354.chr(Encoding::UTF_8)
+p 65.chr
