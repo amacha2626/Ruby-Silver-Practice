@@ -651,3 +651,6 @@ obj2 = obj.dup
 p obj.object_id
 p obj2.object_id
 p obj.equal?(obj2)
+
+p ?b
+# p ?333
