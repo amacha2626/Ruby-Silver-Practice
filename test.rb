@@ -660,3 +660,7 @@ p "foo\r\n".chomp
 p "foo\n\r".chomp
 
 puts("abcdefghijklmnopqrstuvwxyz".split(//, 5))
+
+str = "foobarbaz\r\n\r\n"
+p str.chomp
+p str.chomp('')
