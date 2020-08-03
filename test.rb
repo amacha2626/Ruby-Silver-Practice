@@ -653,4 +653,6 @@ p obj2.object_id
 p obj.equal?(obj2)
 
 p ?b
-# p ?333
+# p ?333]
+
+p 101.
