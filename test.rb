@@ -631,3 +631,14 @@ p f.readline("Earth")
 
 p File.split("/home/john/bookmarks/")
 p File.split("/home/john/bookmarks/").join
+
+(1..31).each_slice(7) do |i|
+  i.each {|n| printf("%2d%s", n, "\s") }
+  print("\n")
+end
+
+string = "test code"
+string.slice(0, 4)
+p string
+string.slice!(0,4)
+p string
