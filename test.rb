@@ -659,3 +659,4 @@ p 101.*(3)
 p "foo\r\n".chomp
 p "foo\n\r".chomp
 
+puts("abcdefghijklmnopqrstuvwxyz".split(//, 3))
