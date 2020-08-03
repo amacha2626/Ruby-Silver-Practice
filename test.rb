@@ -655,4 +655,7 @@ p obj.equal?(obj2)
 p ?b
 # p ?333]
 
-p 101.
+p 101.*(3)
+p "foo\r\n".chomp
+p "foo\n\r".chomp
+
