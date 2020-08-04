@@ -673,3 +673,4 @@ p hash.delete(:foo)
 p hash
 
 p 070
+p "80".oct
