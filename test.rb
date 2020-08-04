@@ -753,3 +753,12 @@ b = "Rails"
 b = a
 a.upcase!
 p b
+
+foo = [1, 2, 3]
+bar = foo
+bar[3] = 4
+p foo
+p bar
+foo[4] = 5
+p foo
+p bar
