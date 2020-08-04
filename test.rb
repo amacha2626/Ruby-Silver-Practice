@@ -674,3 +674,5 @@ p hash
 
 p 070
 p "80".oct
+
+p "abc-d-efg".split("-",2)
