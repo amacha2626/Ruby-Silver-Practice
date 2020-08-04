@@ -716,3 +716,14 @@ str = "string"
 p str.slice(1,2)
 p str.slice!(1,2)
 p str
+
+Dog = "main"
+class Cat
+  Dog = "foo"
+
+  def self.foo
+    ::Dog
+  end
+end
+
+p Cat.foo
