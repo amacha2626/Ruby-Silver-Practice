@@ -695,3 +695,7 @@ puts Time.now.strftime("%y-%m-%d %-H:%-M:%-S %p")
 puts Time.now.strftime("%y-%m-%d %-H:%-M:%-S")
 
 p Hash({})
+
+hash = Hash.new(0)
+p "a b c d e f g a".scan(/\w/) {|i| hash[i] += 1}
+p hash
