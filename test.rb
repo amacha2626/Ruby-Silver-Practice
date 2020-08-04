@@ -731,3 +731,12 @@ p Cat.foo
 numbers = (1..20).to_a
 p numbers.detect{|x| x % 5 == 0}
 p numbers.find_all{|x| x % 5 == 0}
+
+# x = 0
+# def hoge3
+#   (1...5).each do |i|
+#     x += 1
+#   end
+#   puts x
+# end
+# hoge3
