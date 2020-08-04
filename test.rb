@@ -743,3 +743,5 @@ p numbers.find_all{|x| x % 5 == 0}
 
 member = [1001111, "Tanaka", "Sato"]
 p "ID:%2d Name:%s %s" % member
+
+p Hash[:a, 1, :b, 2, :c, 3]
