@@ -711,3 +711,8 @@ end
 
 p "he-llo".chomp("-")
 p "he-llo-".chomp("-")
+
+str = "string"
+p str.slice(1,2)
+p str.slice!(1,2)
+p str
