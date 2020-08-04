@@ -745,3 +745,11 @@ member = [1001111, "Tanaka", "Sato"]
 p "ID:%2d Name:%s %s" % member
 
 p Hash[:a, 1, :b, 2, :c, 3]
+
+p "neww".match("^New|new")
+
+a = "Ruby"
+b = "Rails"
+b = a
+a.upcase!
+p b
