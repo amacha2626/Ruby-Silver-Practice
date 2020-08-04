@@ -684,3 +684,12 @@ a = 1,2,3
 p a.to_s
 p a.class
 p a.join(",")
+
+a = [1,2,3,4]
+b = [1,3,5,7]
+p a && b
+p a & b
+
+puts Time.now.strftime("%y-%m-%d %-H:%-M:%-S %r")
+puts Time.now.strftime("%y-%m-%d %-H:%-M:%-S %p")
+puts Time.now.strftime("%y-%m-%d %-H:%-M:%-S")
