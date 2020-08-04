@@ -678,3 +678,9 @@ p "80".oct
 p "abc-d-efg".split("-",2)
 
 p File.basename("hoge.txt", ".*")
+p "%2d%s"
+
+a = 1,2,3
+p a.to_s
+p a.class
+p a.join(",")
