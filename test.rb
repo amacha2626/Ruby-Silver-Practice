@@ -666,7 +666,8 @@ p str.chomp
 p str.chomp('')
 
 hash = {:foo => 1, :bar => 2}
+p hash.reject {|key, value| key == :foo }
 p hash.find {|i| i.member?(:foo) }
 p hash.dup
 p hash.delete(:foo)
-p hash.reject {|key, value| key == :foo }
+p hash
