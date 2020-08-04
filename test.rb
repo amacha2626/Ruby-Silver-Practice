@@ -762,3 +762,5 @@ p bar
 foo[4] = 5
 p foo
 p bar
+
+puts("abc-def-ghijklmnopqrstuvwxyz".split(/-/,3))
