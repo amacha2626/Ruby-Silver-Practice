@@ -693,3 +693,5 @@ p a & b
 puts Time.now.strftime("%y-%m-%d %-H:%-M:%-S %r")
 puts Time.now.strftime("%y-%m-%d %-H:%-M:%-S %p")
 puts Time.now.strftime("%y-%m-%d %-H:%-M:%-S")
+
+p Hash({})
