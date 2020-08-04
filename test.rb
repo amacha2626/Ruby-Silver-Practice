@@ -699,3 +699,15 @@ p Hash({})
 hash = Hash.new(0)
 p "a b c d e f g a".scan(/\w/) {|i| hash[i] += 1}
 p hash
+
+begin
+  raise
+  rescue
+    p "例外です"
+    p $!
+  ensure
+    p "ensureです"
+end
+
+p "he-llo".chomp("-")
+p "he-llo-".chomp("-")
