@@ -671,3 +671,5 @@ p hash.find {|i| i.member?(:foo) }
 p hash.dup
 p hash.delete(:foo)
 p hash
+
+p 070
