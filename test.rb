@@ -676,3 +676,5 @@ p 070
 p "80".oct
 
 p "abc-d-efg".split("-",2)
+
+p File.basename("hoge.txt", ".*")
