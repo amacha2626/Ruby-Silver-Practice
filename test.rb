@@ -740,3 +740,6 @@ p numbers.find_all{|x| x % 5 == 0}
 #   puts x
 # end
 # hoge3
+
+member = [1001111, "Tanaka", "Sato"]
+p "ID:%2d Name:%s %s" % member
