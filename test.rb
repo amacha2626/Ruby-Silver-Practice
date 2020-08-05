@@ -769,3 +769,5 @@ hash = {:foo => 1, :bar => 2}
 p hash.delete(:foo)
 
 p Hash[]
+
+p %s|apple banana orange|
