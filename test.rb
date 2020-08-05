@@ -767,3 +767,5 @@ puts("abc-def-ghijklmnopqrstuvwxyz".split(/-/,3))
 
 hash = {:foo => 1, :bar => 2}
 p hash.delete(:foo)
+
+p Hash[]
