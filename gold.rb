@@ -156,3 +156,13 @@ end
 
 p Baz2.new.public_method1
 # p Baz2.new.public_method2
+
+class Object
+  def dog11
+    p "dog"
+  end
+
+  private :dog11
+end
+
+dog11
