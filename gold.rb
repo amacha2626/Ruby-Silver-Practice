@@ -101,3 +101,8 @@ using M
 
 C.new.foo
 C.new.bar
+
+SomeClass = Class.new
+p SomeClass.class
+someclass = SomeClass.new
+p someclass.class
