@@ -49,3 +49,8 @@ end
 p foo1.methodB
 p foo1.singleton_class
 p foo1.class
+
+singleton_class = class << foo1
+  self
+end
+p singleton_class
