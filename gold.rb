@@ -114,3 +114,5 @@ class Class
 end
 
 p C.c_method1
+p String.c_method1
+p Array.c_method1
