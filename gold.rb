@@ -20,3 +20,13 @@ p /a.*b/m === "a\nb"
 
 p `date +%Y/%m/%d`
 p `date /T`
+
+def foo
+  throw :exit, 100
+end
+
+p catch(:exit) { 
+  foo
+  p 1
+}
+p 2
