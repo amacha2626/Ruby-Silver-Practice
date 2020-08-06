@@ -173,3 +173,6 @@ f = Proc.new{ puts i+ j }
 f.call
 i = 60
 f.call
+
+f = Proc.new{|i| puts i}
+3.times(&f)
