@@ -116,3 +116,14 @@ end
 p C.c_method1
 p String.c_method1
 p Array.c_method1
+
+class Bar
+  def Bar.c_method2; 2; end
+  def self.c_method3; 3; end
+  class << self
+    def c_method4; 4; end
+  end
+end
+p Bar.c_method2
+p Bar.c_method3
+p Bar.c_method4
