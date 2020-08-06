@@ -30,3 +30,22 @@ p catch(:exit) {
   p 1
 }
 p 2
+
+class Foo
+  def initialize(a)
+    @a = a
+  end
+  def method1
+    @a
+  end
+end
+
+foo1 = Foo.new(1)
+
+def foo1.methodB
+  @a += 1
+end
+
+p foo1.methodB
+p foo1.singleton_class
+p foo1.class
