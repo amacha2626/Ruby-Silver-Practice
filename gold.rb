@@ -75,3 +75,29 @@ p C2.new.method1
 
 p C1.ancestors
 p C2.ancestors
+
+class C
+  def foo
+    p "C#foo"
+  end
+
+  def bar
+    foo
+  end
+end
+
+module M
+  refine C do
+    def foo
+      p "C#foo in M"
+    end
+  end
+end
+
+C.new.foo
+C.new.bar
+
+using M
+
+C.new.foo
+C.new.bar
