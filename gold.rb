@@ -12,3 +12,8 @@ p $3
 p $4
 
 p %r|(http://www(\.)(.*)/)| === "http://www.xyz./"
+
+p /ruby/ === "RUBY"
+p /ruby/i === "RUBY"
+p /a.*b/ === "a\nb"
+p /a.*b/m === "a\nb"
