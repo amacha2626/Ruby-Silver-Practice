@@ -166,3 +166,10 @@ class Object
 end
 
 dog11
+
+i = 30
+j = 40
+f = Proc.new{ puts i+ j }
+f.call
+i = 60
+f.call
