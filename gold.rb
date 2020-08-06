@@ -106,3 +106,11 @@ SomeClass = Class.new
 p SomeClass.class
 someclass = SomeClass.new
 p someclass.class
+
+class Class
+  def c_method1
+    1
+  end
+end
+
+p C.c_method1
