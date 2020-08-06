@@ -142,3 +142,17 @@ end
 p C4.method1
 c4 = C4.new
 p c4.method1
+
+class Baz2
+  def public_method1
+    private_method1
+  end
+  def public_method2
+    self.private_method1
+  end
+  private
+  def private_method1; 100; end
+end
+
+p Baz2.new.public_method1
+# p Baz2.new.public_method2
