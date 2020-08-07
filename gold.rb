@@ -185,9 +185,24 @@ f = Proc.new{|i| puts i}
 # p "wait"
 # t.join
 
-3.times do |i|
-  Thread.start(i) do |index|
-    p "thread-#{index} start"
+# 3.times do |i|
+#   Thread.start(i) do |index|
+#     p "thread-#{index} start"
+#   end
+# end
+# sleep 1
+
+# class MyClass
+#   MYCONST = 1
+#   p remove_const(:MYCONST)
+#   p MYCONST
+# end
+
+module MyModule
+  def self.included(object)
+    p "#{object} has include #{self}"
   end
 end
-# sleep 1
+class MyClass
+  include MyModule
+end
