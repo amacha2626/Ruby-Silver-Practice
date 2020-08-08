@@ -218,3 +218,6 @@ str = Marshal.dump({a: 1, b: 2, c: 3})
 p str
 p Marshal.load(str)
 
+# t = Thread.new{ Thread.stop }
+# Thread.stop
+
