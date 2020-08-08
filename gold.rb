@@ -202,7 +202,14 @@ module MyModule
   def self.included(object)
     p "#{object} has include #{self}"
   end
+
+  def bar
+    p "OK"
+  end
+  module_function :bar
 end
 class MyClass
   include MyModule
 end
+
+MyModule.bar
