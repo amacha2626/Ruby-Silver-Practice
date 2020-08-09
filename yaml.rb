@@ -11,3 +11,4 @@ yaml_data = <<-DATA
 DATA
 p YAML.load(yaml_data)
 p YAML.load_stream(yaml_data)
+YAML.load_stream(yaml_data){|yaml| p yaml.first}
