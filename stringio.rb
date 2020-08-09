@@ -24,3 +24,10 @@ sio.pos = 0
 output = ""
 sio.read 5, output
 p output
+
+sio.string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+sio.pos = 10
+p sio.readline
+
+sio.seek -10, IO::SEEK_END
+p sio.readline
