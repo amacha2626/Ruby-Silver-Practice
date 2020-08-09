@@ -15,4 +15,12 @@ sio = StringIO.new
 p sio.putc "a"
 p sio.string
 
-sio.string = ""
+sio.string = "Hello World"
+
+p sio.read 5
+p sio.read
+p sio.read
+sio.pos = 0
+output = ""
+sio.read 5, output
+p output
