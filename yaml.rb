@@ -10,3 +10,4 @@ yaml_data = <<-DATA
 - WHITE
 DATA
 p YAML.load(yaml_data)
+p YAML.load_stream(yaml_data)
