@@ -5,3 +5,4 @@ json = <<-DATA
 DATA
 
 p JSON.load(json)
+JSON.load(json, lambda{|x| p x})
