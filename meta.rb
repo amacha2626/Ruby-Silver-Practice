@@ -9,6 +9,9 @@ p M::C::X
 
 Y = "cat"
 module M
+  Y = "dog"
   p Y
   p ::Y
 end
+
+p M.constants
