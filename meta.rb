@@ -15,3 +15,4 @@ module M
 end
 
 p M.constants
+p Module.constants
