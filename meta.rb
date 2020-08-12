@@ -15,4 +15,12 @@ module M
 end
 
 p M.constants
-p Module.constants
+# p Module.constants
+
+module M
+  class C
+    module M2
+      p Module.nesting
+    end
+  end
+end
