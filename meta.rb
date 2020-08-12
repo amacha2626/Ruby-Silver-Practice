@@ -6,3 +6,9 @@ module M
 end
 
 p M::C::X
+
+Y = "cat"
+module M
+  p Y
+  p ::Y
+end
