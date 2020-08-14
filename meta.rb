@@ -91,3 +91,6 @@ p unbound.class
 
 String.send :define_method, :another_method, unbound
 p "abc".another_method
+
+p self
+p self.class
