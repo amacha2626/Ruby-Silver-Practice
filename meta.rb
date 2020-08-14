@@ -21,7 +21,7 @@ module M
   class C
     module M2
       p Module.nesting
-    end
+    endp
   end
 end
 
