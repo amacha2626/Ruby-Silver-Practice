@@ -60,3 +60,11 @@ foo = Foo.new
 p foo.respond_to?(:bar)
 p foo.respond_to?(:buz)
 p number_of.respond_to?(:bob)
+
+dog = "one"
+def cat
+  "meow"
+end
+
+p cat
+p dog.class
