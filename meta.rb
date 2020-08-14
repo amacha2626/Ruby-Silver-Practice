@@ -106,3 +106,16 @@ class D < C; end
 obj = D.new
 p obj.m1
 p C.instance_methods(false)
+
+def add_method_to(a_class)
+  p self
+  # main
+  a_class.class_eval do
+    p self
+    # String
+    def m; self; end # "abc"
+  end
+end
+
+add_method_to String
+p "abc".m
