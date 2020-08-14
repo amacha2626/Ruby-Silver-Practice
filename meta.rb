@@ -50,3 +50,13 @@ end
 number_of = Roulette.new
 puts number_of.bob
 puts number_of.frank
+
+
+class Foo
+  def bar; end;
+end
+
+foo = Foo.new
+p foo.respond_to?(:bar)
+p foo.respond_to?(:buz)
+p number_of.respond_to?(:bob)
