@@ -94,3 +94,15 @@ p "abc".another_method
 
 p self
 p self.class
+
+class C
+  def m1
+    def m2; self; end;
+  end
+end
+
+class D < C; end
+
+obj = D.new
+p obj.m1
+p C.instance_methods(false)
