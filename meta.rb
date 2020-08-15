@@ -138,3 +138,11 @@ end
 p str.title?
 p str.methods.grep(/title?/)
 p str.singleton_methods
+
+class Dog
+  def self.hoge; end;
+end
+
+def Dog.fuga; end
+
+p Dog.singleton_methods
