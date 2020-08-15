@@ -146,3 +146,11 @@ end
 def Dog.fuga; end
 
 p Dog.singleton_methods
+
+class AttrClass
+  attr_accessor :my_attribute 
+end
+
+atr = AttrClass.new
+atr.my_attribute = "abc"
+p atr.my_attribute
