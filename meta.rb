@@ -120,3 +120,12 @@ end
 add_method_to String
 p "abc".m
 
+c = Class.new(Array) do
+  def my_method
+    "Hello"
+  end
+end
+
+MyClass3 = c
+p c.name
+p MyClass3.new.my_method
