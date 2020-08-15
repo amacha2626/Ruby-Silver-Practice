@@ -129,3 +129,12 @@ end
 MyClass3 = c
 p c.name
 p MyClass3.new.my_method
+
+str = "hello, world"
+def str.title?
+  self.upcase == self
+end
+
+p str.title?
+p str.methods.grep(/title?/)
+p str.singleton_methods
