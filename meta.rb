@@ -172,3 +172,11 @@ end
 class D < C; end
 obj = D.new
 p obj.a_method
+p obj.singleton_class
+p obj.singleton_class.superclass
+
+class << obj
+  def a_singleton_method
+    'obj#a_singleton_method()'
+  end
+end
