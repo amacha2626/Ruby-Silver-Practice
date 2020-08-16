@@ -203,3 +203,12 @@ p C.singleton_class.superclass.superclass
 p C.singleton_class.superclass.superclass.superclass
 
 p D.a_class_method
+
+s1, s2 = "abc", "def"
+
+s1.instance_eval do
+  def swoosh!; reverse; end
+end
+
+p s1.swoosh!
+p s2.respond_to? :swoosh!
