@@ -180,3 +180,7 @@ class << obj
     'obj#a_singleton_method()'
   end
 end
+
+def obj.b_singleton_method; end;
+
+p obj.singleton_methods
