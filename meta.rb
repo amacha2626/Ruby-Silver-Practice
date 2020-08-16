@@ -201,3 +201,5 @@ p D.singleton_class.superclass
 p C.singleton_class.superclass
 p C.singleton_class.superclass.superclass
 p C.singleton_class.superclass.superclass.superclass
+
+p D.a_class_method
