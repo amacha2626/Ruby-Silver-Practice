@@ -221,3 +221,14 @@ end
 
 MyClass.c = "It works!"
 p MyClass.c
+
+def MyClass.d=(value)
+  @d = value
+end
+
+def MyClass.d
+  @d
+end
+
+MyClass.d = "hello"
+p MyClass.d
