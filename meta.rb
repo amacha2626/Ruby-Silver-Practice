@@ -199,3 +199,5 @@ p C.superclass
 p D.singleton_class
 p D.singleton_class.superclass
 p C.singleton_class.superclass
+p C.singleton_class.superclass.superclass
+p C.singleton_class.superclass.superclass.superclass
