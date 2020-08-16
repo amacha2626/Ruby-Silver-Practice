@@ -161,3 +161,4 @@ singleton_class = class << obj
 end
 
 p singleton_class.class
+p "abc".singleton_class
