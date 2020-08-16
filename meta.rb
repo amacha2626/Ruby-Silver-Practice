@@ -194,6 +194,7 @@ class C
 end
 
 p C.singleton_class
+p C.superclass
 p D.singleton_class
 p D.singleton_class.superclass
 p C.singleton_class.superclass
