@@ -184,6 +184,7 @@ end
 def obj.b_singleton_method; end;
 
 p obj.singleton_methods
+p obj.singleton_class
 
 class C
   class << self
