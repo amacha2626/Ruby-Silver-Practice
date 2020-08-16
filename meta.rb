@@ -184,3 +184,16 @@ end
 def obj.b_singleton_method; end;
 
 p obj.singleton_methods
+
+class C
+  class << self
+    def a_class_method
+      'C.a_class_method()'
+    end
+  end
+end
+
+p C.singleton_class
+p D.singleton_class
+p D.singleton_class.superclass
+p C.singleton_class.superclass
