@@ -154,3 +154,10 @@ end
 atr = AttrClass.new
 atr.my_attribute = "abc"
 p atr.my_attribute
+
+obj = Object.new
+singleton_class = class << obj
+  self
+end
+
+p singleton_class.class
