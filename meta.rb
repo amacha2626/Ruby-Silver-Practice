@@ -232,3 +232,5 @@ end
 
 MyClass.d = "hello"
 p MyClass.d
+
+p MyClass.d.class
