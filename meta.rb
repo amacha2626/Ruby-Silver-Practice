@@ -234,3 +234,5 @@ MyClass.d = "hello"
 p MyClass.d
 
 p MyClass.d.class
+
+p MyClass.singleton_methods
