@@ -258,3 +258,12 @@ class MyClass
 end
 
 p MyClass.my_method
+
+obj = Object.new
+
+class << obj
+  include MyModule2
+end
+
+p obj.my_method
+p obj.singleton_methods
