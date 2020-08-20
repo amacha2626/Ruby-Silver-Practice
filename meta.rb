@@ -278,3 +278,14 @@ end
 obj = MyClass.new
 p obj.my_method
 p obj.m
+
+class String
+  alias_method :real_length, :length
+
+  def length
+    real_length > 5 ? "long" : "short"
+  end
+end
+
+p "war and peace".length
+p "war and peace".real_length
