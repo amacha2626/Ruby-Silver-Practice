@@ -236,3 +236,13 @@ p MyClass.d
 p MyClass.d.class
 
 p MyClass.singleton_methods
+
+module MyModule2
+  def self.my_method; "hello"; end
+end
+
+class MyClass
+  include MyModule2
+end
+
+# p MyClass.my_method
