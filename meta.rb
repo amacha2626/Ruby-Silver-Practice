@@ -237,12 +237,24 @@ p MyClass.d.class
 
 p MyClass.singleton_methods
 
+# module MyModule2
+#   def self.my_method; "hello"; end
+# end
+
+# class MyClass
+#   include MyModule2
+# end
+
+# p MyClass.my_method
+
 module MyModule2
-  def self.my_method; "hello"; end
+  def my_method; "hello"; end
 end
 
 class MyClass
-  include MyModule2
+  class << self
+    include MyModule2
+  end
 end
 
-# p MyClass.my_method
+p MyClass.my_method
