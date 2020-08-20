@@ -261,9 +261,11 @@ p MyClass.my_method
 
 obj = Object.new
 
-class << obj
-  include MyModule2
-end
+# class << obj
+#   include MyModule2
+# end
+
+obj.extend MyModule2
 
 p obj.my_method
 p obj.singleton_methods
