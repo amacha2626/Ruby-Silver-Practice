@@ -293,3 +293,5 @@ p "war and peace".real_length
 require 'uri'
 
 p URI.encode_www_form_component("技術者試験対策")
+uri = URI.encode_www_form_component("技術者試験対策")
+p URI.decode_www_form_component(uri)
