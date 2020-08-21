@@ -289,3 +289,7 @@ end
 
 p "war and peace".length
 p "war and peace".real_length
+
+require 'uri'
+
+p URI.encode_www_form_component("技術者試験対策")
