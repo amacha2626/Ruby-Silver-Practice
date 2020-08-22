@@ -14,3 +14,5 @@ p res
 
 p res.code
 p res.message
+
+p res.class
