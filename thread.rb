@@ -9,3 +9,5 @@ t = Thread.new{
 s.join
 t.join
 puts
+
+p s.class
