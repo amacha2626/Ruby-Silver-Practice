@@ -8,3 +8,5 @@ end_to = Date.new(2017, 7, 31)
 start_from.step(end_to, 7) do |date|
   p date.to_s
 end
+
+p DateTime.now.leap?
