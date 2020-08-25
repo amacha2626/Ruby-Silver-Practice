@@ -337,3 +337,6 @@ p C.new.foo
 
 p [1, 2, 3].inject{|x, y| x + y ** 2 }
 p [1, 2, 3].inject([]){|x, y| x << y ** 2 }
+
+p (1..Float::INFINITY).lazy.map{|x|x**2}.take(3).inject(0, &:+)
+p [1,2,3,4,5].inject(0, &:+)
