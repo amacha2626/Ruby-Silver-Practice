@@ -299,3 +299,15 @@ p URI.decode_www_form_component(uri).class
 
 p 4/5r
 p 4/5r.to_f
+
+def hoge(*args)
+  p args
+  p *args
+  p args[0]
+end
+hoge [1,2,3]
+
+def hoge(x:,y: 2, **params)
+  p "#{x},#{y},#{params[:z]}"
+end
+hoge(x: 1, z: 3)
