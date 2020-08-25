@@ -311,3 +311,16 @@ def hoge(x:,y: 2, **params)
   p "#{x},#{y},#{params[:z]}"
 end
 hoge(x: 1, z: 3)
+
+class Cls1
+  def Cls1.foo
+    puts "Cls1"
+  end
+end
+class Cls2 < Cls1
+  def foo
+    puts "Cls2"
+  end
+end
+Cls2.foo
+p Cls2.singleton_methods
