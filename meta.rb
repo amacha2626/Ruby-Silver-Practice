@@ -324,3 +324,13 @@ class Cls2 < Cls1
 end
 Cls2.foo
 p Cls2.singleton_methods
+
+module M
+  def foo
+    self.class
+  end
+end
+class C
+  include M
+end
+p C.new.foo
