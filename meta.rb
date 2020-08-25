@@ -334,3 +334,6 @@ class C
   include M
 end
 p C.new.foo
+
+p [1, 2, 3].inject{|x, y| x + y ** 2 }
+p [1, 2, 3].inject([]){|x, y| x << y ** 2 }
