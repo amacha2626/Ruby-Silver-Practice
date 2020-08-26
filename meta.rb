@@ -451,3 +451,29 @@ v1 = 1 / 2 == 0
 v2 = !!v1 or raise RuntimeError
 # v2 = !!v1 || (raise RuntimeError)
 puts v2 and false
+
+class Company
+  attr_reader :id
+  attr_accessor :name
+  def initialize id, name
+    @id = id
+    @name = name
+  end
+  def to_s
+    "#{id}:#{name}"
+  end
+  def <=> other
+    other.id <=> self.id
+  end
+end
+
+companies = []
+companies << Company.new(2, 'Liberyfish')
+companies << Company.new(3, 'Freefish')
+companies << Company.new(1, 'Freedomfish')
+
+companies.sort!
+
+companies.each do |e|
+  puts e
+end
