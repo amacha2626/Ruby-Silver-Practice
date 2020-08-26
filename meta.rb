@@ -425,3 +425,9 @@ end
 puts Fukuzawa.name
 p Fukuzawa.singleton_methods
 p Fukuzawa::NAME
+
+class String
+  alias_method :hoge, :reverse
+end
+
+p "12345".hoge
