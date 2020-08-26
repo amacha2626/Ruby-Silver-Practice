@@ -356,3 +356,4 @@ x = ["abc", "defgh", "lopq"]
 p x.sort{|a, b| b.size <=> a.size}
 p x.sort{|a, b| a.size <=> b.size}
 p x.sort{|a, b| a.size - b.size}
+p x.sort{|a, b| a <=> b}
