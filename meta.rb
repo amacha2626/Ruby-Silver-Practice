@@ -374,3 +374,18 @@ end
 
 # Cls3.foo
 Mod.foo
+
+class C
+  @val = 3
+  attr_accessor :val
+  class << self
+    @val = 10
+  end
+  def initialize
+    @val *= 2 if val
+  end
+end
+
+c = C.new
+
+p c.val
