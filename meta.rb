@@ -389,3 +389,5 @@ end
 c = C.new
 
 p c.val
+
+p $_
