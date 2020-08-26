@@ -351,3 +351,8 @@ p f.resume
 a, b = [1, 2]
 p a
 p b
+
+x = ["abc", "defgh", "lopq"]
+p x.sort{|a, b| b.size <=> a.size}
+p x.sort{|a, b| a.size <=> b.size}
+p x.sort{|a, b| a.size - b.size}
