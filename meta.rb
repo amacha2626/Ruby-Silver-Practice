@@ -357,3 +357,7 @@ p x.sort{|a, b| b.size <=> a.size}
 p x.sort{|a, b| a.size <=> b.size}
 p x.sort{|a, b| a.size - b.size}
 p x.sort{|a, b| a <=> b}
+
+d1 = Time.new
+d2 = Time.new
+p (d1 - d2).class
