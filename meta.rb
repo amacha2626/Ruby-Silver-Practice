@@ -477,3 +477,5 @@ companies.sort!
 companies.each do |e|
   puts e
 end
+
+p "a".succ
