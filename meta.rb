@@ -347,3 +347,7 @@ f = Fiber.new do
 end
 p f.resume
 p f.resume
+
+a, b = [1, 2]
+p a
+p b
