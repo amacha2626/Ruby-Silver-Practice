@@ -446,3 +446,8 @@ hoge(1,2,3,4) do |args|
 end
 
 p !!!true
+
+v1 = 1 / 2 == 0
+v2 = !!v1 or raise RuntimeError
+# v2 = !!v1 || (raise RuntimeError)
+puts v2 and false
