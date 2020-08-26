@@ -409,3 +409,19 @@ end
 using R
 
 puts C.m1
+
+class Human
+  NAME = "Unknown"
+
+  def Human.name
+    const_get(:NAME)
+  end
+end
+
+class Fukuzawa < Human
+  NAME = "Yukichi"
+end
+
+puts Fukuzawa.name
+p Fukuzawa.singleton_methods
+p Fukuzawa::NAME
