@@ -361,3 +361,16 @@ p x.sort{|a, b| a <=> b}
 d1 = Time.new
 d2 = Time.new
 p (d1 - d2).class
+
+module Mod
+  def Mod.foo
+    p "Mod"
+  end
+end
+
+class Cls3
+  include Mod
+end
+
+# Cls3.foo
+Mod.foo
