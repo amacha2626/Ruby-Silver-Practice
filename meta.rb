@@ -431,3 +431,5 @@ class String
 end
 
 p "12345".hoge
+
+p ['a' ,'b'].map(&:upcase)
