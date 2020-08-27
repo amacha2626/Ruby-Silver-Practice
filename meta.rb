@@ -548,3 +548,16 @@ module M
 end
 
 p M.a
+
+class Dog
+  def name
+    "pochi"
+  end
+
+  def name
+    # super
+    "tama"
+  end
+end
+
+p Dog.new.name
