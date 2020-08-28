@@ -561,3 +561,20 @@ class Dog
 end
 
 p Dog.new.name
+
+module M
+  CONST1 = "Hello, world"
+  class C
+    def awesome_method
+      CONST1
+    end
+  end
+end
+
+# class M::C
+#   def awesome_method
+#     CONST1
+#   end
+# end
+
+p M::C.new.awesome_method
