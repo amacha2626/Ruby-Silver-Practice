@@ -578,3 +578,4 @@ end
 # end
 
 p M::C.new.awesome_method
+
