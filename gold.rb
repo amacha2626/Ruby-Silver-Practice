@@ -249,3 +249,4 @@ module M
 end
 
 p C.new.awesome_method
+
